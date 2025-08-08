@@ -35,7 +35,7 @@ export default function MichifAI() {
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="text-xl font-bold tracking-wider">MICHIF AI</div>
           <nav className={myFont2.className}>
-            <div className="flex gap-2">
+            <div className="flex gap-6">
               <a
                 href="#"
                 onClick={(e) => {
