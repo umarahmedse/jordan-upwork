@@ -6,8 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Jordan App',
-  description: 'A modern way of learning Michif',
-    generator: 'v0.dev'
+  description: 'A modern way of learning Michif'
 }
 
 export default function RootLayout({
