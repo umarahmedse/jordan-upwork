@@ -11,7 +11,7 @@ const myFont = localFont({
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jordan App",
+  title: "Michif",
   description: "A modern way of learning Michif",
 };
 
