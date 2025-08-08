@@ -3,11 +3,6 @@
 import { useState } from 'react'
 import Image from 'next/image'
 
-export const metadata = {
-  title: 'Jordan App',
-  description: 'A modern way of learning Michif',
-}
-
 export default function MichifAI() {
   const [activeTab, setActiveTab] = useState('Text')
 
