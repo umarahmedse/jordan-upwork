@@ -4,7 +4,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 
 const myFont = localFont({
-  src: "./fonts/Sohne.ttf",
+  src: "./Sohne.ttf",
 });
 const inter = Inter({ subsets: ["latin"] });
 
