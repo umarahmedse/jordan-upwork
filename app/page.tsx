@@ -157,13 +157,13 @@ export default function MichifAI() {
             <div className="flex flex-col lg:flex-row items-center gap-16">
               {/* Phone Image */}
               <div className="flex-1 flex justify-center">
-                <div className="relative">
+                <div className="relative w-full max-w-md lg:max-w-lg">
                   <Image
                     src={tabContent[activeTab as keyof typeof tabContent].image}
                     alt={`${activeTab} interface`}
-                    width={320}
-                    height={640}
-                    className="object-contain"
+                    width={600}
+                    height={1200}
+                    className="w-full h-auto object-contain"
                   />
                 </div>
               </div>
