@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 
 // If keeping in public directory
 const myFont = localFont({
-  src: "../public/Sohne.ttf",
+  src: "../public/Sohne.otf",
 });
 
 const inter = Inter({ subsets: ["latin"] });
