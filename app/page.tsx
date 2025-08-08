@@ -156,14 +156,15 @@ export default function MichifAI() {
 
             <div className="flex flex-col lg:flex-row items-center gap-16">
               {/* Phone Image */}
-              <div className="flex-1 flex justify-center">
-                <div className="relative w-full max-w-md lg:max-w-lg">
+              <div className="flex-1 flex justify-center items-center">
+                <div className="relative w-[300px] h-[600px] lg:w-[400px] lg:h-[800px]">
                   <Image
-                    src={tabContent[activeTab as keyof typeof tabContent].image}
+                    src={tabContent[activeTab].image}
                     alt={`${activeTab} interface`}
-                    width={600}
-                    height={1200}
-                    className="w-full h-auto object-contain"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 1024px) 300px, 400px"
+                    priority
                   />
                 </div>
               </div>
@@ -175,7 +176,9 @@ export default function MichifAI() {
                   {Object.keys(tabContent).map((tab) => (
                     <button
                       key={tab}
-                      onClick={() => setActiveTab(tab)}
+                      onClick={() =>
+                        setActiveTab(tab as keyof typeof tabContent)
+                      }
                       className={`text-lg font-medium transition-colors ${
                         activeTab === tab
                           ? "text-green-400 border-b-2 border-green-400 pb-2"
@@ -187,9 +190,9 @@ export default function MichifAI() {
                   ))}
                 </div>
 
-                {/* Tab Content */}
+                {/* Tab Content Text */}
                 <div className="text-gray-300 text-lg leading-relaxed">
-                  {tabContent[activeTab as keyof typeof tabContent].title}
+                  {tabContent[activeTab].title}
                 </div>
               </div>
             </div>
