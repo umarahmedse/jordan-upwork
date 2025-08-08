@@ -7,9 +7,7 @@ import localFont from "next/font/local";
 const myFont = localFont({
   src: "../public/Sohne.otf",
 });
-export const myFont2 = localFont({
-  src: "../public/Dans.ttf",
-});
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

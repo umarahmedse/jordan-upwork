@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { myFont2 } from "./layout";
-
+import localFont from "next/font/local";
+const myFont2 = localFont({
+  src: "../public/Dans.ttf",
+});
 export default function MichifAI() {
   const [activeTab, setActiveTab] = useState("Text");
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false);
