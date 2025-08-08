@@ -161,9 +161,7 @@ export default function MichifAI() {
                   <Image
                     src={tabContent[activeTab as keyof typeof tabContent].image}
                     alt={`${activeTab} interface`}
-                    width={600}
-                    height={1200}
-                    className="w-full h-auto object-contain"
+                    className="w-[300px] h-[600px] object-contain"
                   />
                 </div>
               </div>
