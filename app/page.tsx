@@ -281,7 +281,7 @@ const Page = () => {
           <div className="container mx-auto px-6 flex justify-between items-center">
             <div className="text-xl font-bold tracking-wider">MICHIF AI</div>
             <div className={myFont2.className}>
-              <div className="flex gap-8">
+              <div className="hidden gap-8 md:flex">
                 <a
                   href="#"
                   className="text-white hover:text-gray-300 transition-colors"
