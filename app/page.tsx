@@ -41,7 +41,7 @@ const Page = () => {
     Social: {
       title:
         "Show up in your language. On social media, whether you're posting, commenting, or replying — use Michif keywords to help you express yourself and show your Métis pride online.",
-      image: "https://i.ibb.co/HfXsp1Dn/Group-36859.png",
+      image: "https://i.ibb.co/zh8FZ8Jb/Group-36861-1.png",
     },
     Work: {
       title:
